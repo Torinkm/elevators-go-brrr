@@ -16,7 +16,7 @@
             <output expression="&quot;Please enter your real name and surname&quot;" newline="True"/>
             <input variable="Name"/>
             <input variable="Surname"/>
-            <output expression="&quot;Enter your email adress&quot;" newline="True"/>
+            <output expression="&quot;Enter your email address&quot;" newline="True"/>
             <input variable="email"/>
             <output expression="&quot;Enter delivery details&quot;" newline="True"/>
             <input variable="Street"/>
