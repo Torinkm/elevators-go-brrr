@@ -9,6 +9,8 @@ Make sure to add it in the format below:
 
 # ------------------------{Updates}------------------------
 # Aki
+Created a new folder to store the Badge and Icon for the company, to seperate them from other code that may be created in Sources
+# Aki
 Made a logo Badge without the Text incase we need it as a home buttom
 # Aki
 Added the Source Folder for the website and code as well as adding the logo into it
