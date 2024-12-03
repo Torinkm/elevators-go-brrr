@@ -3,6 +3,8 @@ Make sure to add any info needed with your name and what changed in summary
 # Make sure to add new updates below
 # Aki
 Renamed The Logo File to make it easier to find
+# Sevryn
+Added the first logo design
 # Tay
 Added gantt chart
 # Aki
