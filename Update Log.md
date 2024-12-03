@@ -7,7 +7,7 @@ Make sure to add it in the format below:
 # {Name}
 {What Was Updated}
 
-# ------------------------{Updates}-----------------------------------
+# ------------------------{Updates}------------------------
 # Aki
 Renamed The Logo File to make it easier to find
 # Sevryn
