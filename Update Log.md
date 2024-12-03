@@ -15,6 +15,8 @@ Make sure to add it in the format below:
 
 # ------------------------{Updates}------------------------
 # Aki
+Created main/Backup to store a base older version [please update it with a backup when editing or creating new files]
+# Aki
 Moved System concepts to a new folder inside main/Source
 # Sevryn
 Added Hire and Login / register systems made as a concept through flowgorithm
