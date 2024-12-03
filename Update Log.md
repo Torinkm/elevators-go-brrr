@@ -15,6 +15,10 @@ Make sure to add it in the format below:
 
 # ------------------------{Updates}------------------------
 # Aki
+Moved System concepts to a new folder inside main/Source
+# Sevryn
+Added Hire and Login / register systems made as a concept through flowgorithm
+# Aki
 Seperated Icons contents into 2 seperawte folders for the 2 different icons
 # Aki
 Moved Second Logo to Icons folder as well as adding a badge for the second icon
