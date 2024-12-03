@@ -10,7 +10,7 @@ Make sure to add it in the format below:
 # ------------------------{Updates}------------------------
 # Aki
 Moved Second Logo to Icons folder as well as adding a badge for the second icon
-# ???
+# Sev
 Added second Logo to repository
 # Aki
 Created a new folder to store the Badge and Icon for the company, to seperate them from other code that may be created in Sources
