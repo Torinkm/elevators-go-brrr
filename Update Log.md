@@ -5,7 +5,7 @@ Make sure to add any info needed with your name and what changed in summary
 Renamed The Logo File to make it easier to find
 # Sevryn
 Added the first logo design
-# Tay
+# Tori
 Added gantt chart
 # Aki
 Added this update log to compile updates and view progress
