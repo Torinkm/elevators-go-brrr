@@ -9,6 +9,8 @@ Make sure to add it in the format below:
 
 # ------------------------{Updates}------------------------
 # Aki
+Made a logo Badge without the Text incase we need it as a home buttom
+# Aki
 Added the Source Folder for the website and code as well as adding the logo into it
 # Aki
 Renamed The Logo File to make it easier to find
