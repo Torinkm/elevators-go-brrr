@@ -1,3 +1,9 @@
+     _   _           _       _         _                
+    | | | |_ __   __| | __ _| |_ ___  | |    ___   __ _ 
+    | | | | '_ \ / _` |/ _` | __/ _ \ | |   / _ \ / _` |
+    | |_| | |_) | (_| | (_| | ||  __/ | |__| (_) | (_| |
+     \___/| .__/ \__,_|\__,_|\__\___| |_____\___/ \__, |
+          |_|                                     |___/ 
 # Log changes below by each person
 Make sure to add any info needed with your name and what changed in summary 
 # Before yu type
