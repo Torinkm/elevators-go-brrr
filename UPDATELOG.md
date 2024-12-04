@@ -14,6 +14,12 @@ Make sure to add it in the format below:
 {What Was Updated}
 
 # ------------------------{Updates}------------------------
+# Aki
+Moved Rational and Proposal to main/Formal Files
+Moved gantt chart to main/Formal Files/Gantt
+Backed Up main/Formal Files
+# Torrin
+Added Proposal
 # Tori
 Added the Rational file as PDF
 # Jack
