@@ -15,6 +15,12 @@ Make sure to add it in the format below:
 
 # ------------------------{Updates}------------------------
 # Aki
+Added main/Source/Algorithm Concepts/Admin COntrl with the flowgorithms to go with it
+
+Created main/Source/Algorithm Concepts/Hire to store the Hiring system
+
+Created main/Source/Algorithm Concepts/Login and Register to store the Login/Register system
+# Aki
 Backed up the new gantt chart
 # Tori
 Uploaded an updated Gantt Chart
