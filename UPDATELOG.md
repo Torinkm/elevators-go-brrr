@@ -16,6 +16,8 @@ Make sure to add it in the format below:
 # ------------------------{Updates}------------------------
 # Tori
 Added the Rational file as PDF
+# Jack
+Added the proposal file
 # Aki
 Renamed 'Update Log.md' to 'UPDATELOG.md'
 # Jack + Aki
