@@ -1,0 +1,14 @@
+{% extends "base.html"%}
+
+{%  block content %}
+<html>
+<head>
+    <h1 id="user">{{ title }}</h1>
+    <script src="/static/basetemp.css"></script>
+</head>
+<body>
+    <a class="nav-link" href="{{ url_for('home') }}">Home Page</a>
+    <a class="nav-link" href="{{ url_for('logout') }}">Log Out</a>
+</body>
+</html>
+{%  endblock content %}
