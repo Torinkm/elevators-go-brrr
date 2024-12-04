@@ -18,7 +18,7 @@ Make sure to add it in the format below:
 Moved Rational and Proposal to main/Formal Files
 Moved gantt chart to main/Formal Files/Gantt
 Backed Up main/Formal Files
-# Torrin
+# Torin
 Added Proposal
 # Tori
 Added the Rational file as PDF
@@ -58,5 +58,3 @@ Added the first logo design
 Added gantt chart
 # Aki
 Added this update log to compile updates and view progress
-# Jack
-Added Proposol Doc
