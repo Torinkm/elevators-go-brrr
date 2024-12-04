@@ -6,7 +6,7 @@
           |_|                                     |___/ 
 # Log changes below by each person
 Make sure to add any info needed with your name and what changed in summary 
-# Before yu type
+# Before you type
 Remember that any changes to the Update Log do NOT count towards needing to be mentioned
 Make sure to add it in the format below:
 
@@ -14,6 +14,8 @@ Make sure to add it in the format below:
 {What Was Updated}
 
 # ------------------------{Updates}------------------------
+# Jack + Aki
+replaced 'yu' with 'you' in README and Update Log
 # Aki
 Added a [useless ig] License and a README to help with uploading files
 # Aki
