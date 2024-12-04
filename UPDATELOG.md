@@ -14,6 +14,8 @@ Make sure to add it in the format below:
 {What Was Updated}
 
 # ------------------------{Updates}------------------------
+# Aki
+Backed up the new gantt chart
 # Tori
 Uploaded an updated Gantt Chart
 # Aki
