@@ -1,4 +1,4 @@
-# Before yu upload!
+# Before you upload!
 Make sure to add files to the respective folder in the repository!
 
 For example:
