@@ -14,6 +14,8 @@ Make sure to add it in the format below:
 {What Was Updated}
 
 # ------------------------{Updates}------------------------
+# Tori
+Added the Rational file as PDF
 # Aki
 Renamed 'Update Log.md' to 'UPDATELOG.md'
 # Jack + Aki
