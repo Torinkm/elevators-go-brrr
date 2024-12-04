@@ -48,4 +48,5 @@ Added the first logo design
 Added gantt chart
 # Aki
 Added this update log to compile updates and view progress
-
+# Jack
+Added Proposol Doc
