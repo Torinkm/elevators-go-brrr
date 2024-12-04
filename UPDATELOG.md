@@ -15,6 +15,8 @@ Make sure to add it in the format below:
 
 # ------------------------{Updates}------------------------
 # Aki
+Created a file in main/Source/Algorithm Concepts/AdminControl to explain the flowgorithm
+# Aki
 Added main/Source/Algorithm Concepts/Admin Control with the flowgorithms to go with it
 
 Created main/Source/Algorithm Concepts/Hire to store the Hiring system
