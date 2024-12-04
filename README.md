@@ -15,4 +15,4 @@ We do not want old code that still worked or even old images that were better to
 main/Backup had been made if you realy do not want to save the files locally on yur school account
 
 # Once uploaded
-Make sure you record any changes yu made in main/Update Log.md except from changes to the update log itself
+Make sure you record any changes yu made in main/UPDATELOG.md except from changes to the update log itself
