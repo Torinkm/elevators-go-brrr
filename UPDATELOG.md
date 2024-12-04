@@ -15,9 +15,9 @@ Make sure to add it in the format below:
 
 # ------------------------{Updates}------------------------
 # Aki
-Moved Rational and Proposal to main/Formal Files
-Moved gantt chart to main/Formal Files/Gantt
-Backed Up main/Formal Files
+Moved Rational and Proposal to main/Formal Files, 
+moved gantt chart to main/Formal Files/Gantt, and
+backed Up main/Formal Files.
 # Torin
 Added Proposal
 # Tori
