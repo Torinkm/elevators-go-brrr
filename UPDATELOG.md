@@ -15,6 +15,8 @@ Make sure to add it in the format below:
 
 # ------------------------{Updates}------------------------
 # Aki
+Added main/Source/Web Design Concepts for Designs of the website
+# Aki
 Moved Rational and Proposal to main/Formal Files.
 
 Moved gantt chart to main/Formal Files/Gantt.
