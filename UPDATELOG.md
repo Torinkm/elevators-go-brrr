@@ -14,6 +14,8 @@ Make sure to add it in the format below:
 {What Was Updated}
 
 # ------------------------{Updates}------------------------
+# Tori
+Uploaded an updated Gantt Chart
 # Aki
 Added main/Source/Web Design Concepts for Designs of the website
 # Aki
