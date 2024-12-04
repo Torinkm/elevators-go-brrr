@@ -7,13 +7,15 @@
 # Log changes below by each person
 Make sure to add any info needed with your name and what changed in summary 
 # Before you type
-Remember that any changes to the Update Log do NOT count towards needing to be mentioned
+Remember that any changes to the Update Log through updates [like if i typed i changed the README] do NOT count towards needing to be mentioned
 Make sure to add it in the format below:
 
 # {Name}
 {What Was Updated}
 
 # ------------------------{Updates}------------------------
+# Aki
+Renamed 'Update Log.md' to 'UPDATELOG.md'
 # Jack + Aki
 replaced 'yu' with 'you' in README and Update Log
 # Aki
