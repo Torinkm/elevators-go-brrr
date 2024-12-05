@@ -14,6 +14,8 @@ Make sure to add it in the format below:
 {What Was Updated}
 
 # ------------------------{Updates}------------------------
+# Tori
+Added the Icon 1 as a transparent badge as well even though we won't be using it
 # Aki
 Created a working flowgorithm for the hire system, and stored older version in a seperate file in the same directionary
 # Aki
