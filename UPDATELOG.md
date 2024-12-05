@@ -15,6 +15,8 @@ Make sure to add it in the format below:
 
 # ------------------------{Updates}------------------------
 # Aki
+Finished Explaiation for main/Source/Algorithm Concepts/AdminControl floworithms
+# Aki
 Deleted the Web Design Concept folder as it was not being used by anyone
 # Aki
 Created a file in main/Source/Algorithm Concepts/AdminControl to explain the flowgorithm
