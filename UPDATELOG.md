@@ -15,7 +15,7 @@ Make sure to add it in the format below:
 
 # ------------------------{Updates}------------------------
 # Aki
-Renamed Transparent Logo 2 to Logo[TRANSPARENT]
+Renamed 'Logo second one Badge BACKGORUND GONE.png' to 'Logo[TRANSPARENT].png'
 # Tori
 Removed the background of the 2nd logo badge design & uploaded it
 # Aki
