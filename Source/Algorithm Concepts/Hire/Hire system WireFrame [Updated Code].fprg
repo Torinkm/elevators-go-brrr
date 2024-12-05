@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="s1moroz"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-12-05 10:55:52 AM"/>
+        <attribute name="created" value="czFtb3JvejtDQy1EVDMwNS0xOC1XQ0M7MjAyNC0xMi0wMzswMjozMjoxMyBQTTsyODk5"/>
+        <attribute name="edited" value="czFtb3JvejtDQy1EVDMwNS0xOC1XQ0M7MjAyNC0xMi0wMzswMjozNzowNiBQTTsxOzMwMTQ="/>
+        <attribute name="edited" value="YTI1d2Vic3RlcjtDQy1EVDMwNS0xOC1XQ0M7MjAyNC0xMi0wNTsxMDo1NTo1MiBBTTsxOzMyMzQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Name, Surname, Email, Street, Town" type="String" array="False" size=""/>
+            <declare name="HouseNumber" type="Integer" array="False" size=""/>
+            <output expression="&quot;Welcome to a hire system&quot;" newline="True"/>
+            <output expression="&quot;If you would like to hire our products, please fill the details below&quot;" newline="True"/>
+            <assign variable="Name" expression="&quot;&quot;"/>
+            <assign variable="Surname" expression="&quot;&quot;"/>
+            <while expression="Name == &quot;&quot; OR Surname == &quot;&quot;">
+                <output expression="&quot;Please enter:&quot;" newline="True"/>
+                <output expression="&quot;Real Name&quot;" newline="True"/>
+                <input variable="Name"/>
+                <output expression="&quot;Surname&quot;" newline="True"/>
+                <input variable="Surname"/>
+            </while>
+            <output expression="&quot;Accepted Name and Surname&quot;" newline="True"/>
+            <assign variable="Email" expression="&quot;&quot;"/>
+            <while expression="Email == &quot;&quot;">
+                <output expression="&quot;Enter your email address&quot;" newline="True"/>
+                <input variable="email"/>
+            </while>
+            <output expression="&quot;Accepted Email&quot;" newline="True"/>
+            <assign variable="Street" expression="&quot;&quot;"/>
+            <assign variable="Town" expression="&quot;&quot;"/>
+            <assign variable="HouseNumber" expression="-1"/>
+            <while expression="Street == &quot;&quot; OR Town == &quot;&quot; OR HouseNumber &lt; 1">
+                <output expression="&quot;Enter delivery details for:&quot;" newline="True"/>
+                <output expression="&quot;Street&quot;" newline="True"/>
+                <input variable="Street"/>
+                <output expression="&quot;Number of your House&quot;" newline="True"/>
+                <input variable="HouseNumber"/>
+                <output expression="&quot;Name of Town&quot;" newline="True"/>
+                <input variable="Town"/>
+            </while>
+            <output expression="&quot;Thanks for using our service,that make us happy&quot;" newline="True"/>
+            <call expression="SendData(Name,Surname,Town,HouseNumber,Street,Email)"/>
+            <output expression="&quot;The members of our team will reply to your email within 1-3 working days&quot;" newline="True"/>
+        </body>
+    </function>
+    <function name="SendData" type="None" variable="">
+        <parameters>
+            <parameter name="Name" type="String" array="False"/>
+            <parameter name="Surname" type="String" array="False"/>
+            <parameter name="Town" type="String" array="False"/>
+            <parameter name="HouseNumber" type="Integer" array="False"/>
+            <parameter name="Street" type="String" array="False"/>
+            <parameter name="Email" type="String" array="False"/>
+        </parameters>
+        <body>
+            <comment text="Should email or send data to admins or the team responsible for hiring"/>
+            <output expression="&quot;Data sent to Staff&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
