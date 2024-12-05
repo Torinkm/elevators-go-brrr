@@ -14,6 +14,10 @@ Make sure to add it in the format below:
 {What Was Updated}
 
 # ------------------------{Updates}------------------------
+# Tori
+Added the original Rational documewnt as a word document in the original files section in formal files
+# Aki
+
 # Aki
 Added a SECURITY file supposed to guide on what to do with vulnrabilities, althought may be better to incorperate it with the README or delete the SECURITY.md completly
 # Tori
