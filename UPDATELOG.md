@@ -15,6 +15,8 @@ Make sure to add it in the format below:
 
 # ------------------------{Updates}------------------------
 # Aki
+Created a working flowgorithm for the hire system, and stored older version in a seperate file in the same directionary
+# Aki
 Removed main/.github/workflows as it's a useless file
 # Aki
 Backed up the Current main/Source, main/Evelate Norfolk and main/Formal Files 
