@@ -17,7 +17,15 @@ Make sure to add it in the format below:
 # Tori
 Added the original Rational document as a word document in the original docs section in formal files
 # Aki
+Created main/Formal Files/Original Docx
 
+Created main/Formal Files/PDF Preview
+
+Added Rational, Proposal and the Design Doccument in the filetype .pdf into main/Formal Files/PDF Preview
+
+Added Proposal and Design Doccument in the filetype .docx into  main/Formal Files/Original Docx
+
+Renamed the Proposal and Design Doccumernt to look nicer [for both filetypes]
 # Aki
 Added a SECURITY file supposed to guide on what to do with vulnrabilities, althought may be better to incorperate it with the README or delete the SECURITY.md completly
 # Tori
