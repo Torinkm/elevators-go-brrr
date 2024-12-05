@@ -14,16 +14,18 @@ Make sure to add it in the format below:
 {What Was Updated}
 
 # ------------------------{Updates}------------------------
+# Aki
+Backed Up 'main/Formal Files'
 # Tori
 Added the original Rational document as a word document in the original docs section in formal files
 # Aki
-Created main/Formal Files/Original Docx
+Created 'main/Formal Files/Original Docx'
 
-Created main/Formal Files/PDF Preview
+Created' main/Formal Files/PDF Preview'
 
-Added Rational, Proposal and the Design Doccument in the filetype .pdf into main/Formal Files/PDF Preview
+Added Rational, Proposal and the Design Doccument in the filetype .pdf into 'main/Formal Files/PDF Preview'
 
-Added Proposal and Design Doccument in the filetype .docx into  main/Formal Files/Original Docx
+Added Proposal and Design Doccument in the filetype .docx into  'main/Formal Files/Original Docx'
 
 Renamed the Proposal and Design Doccumernt to look nicer [for both filetypes]
 # Aki
