@@ -14,6 +14,8 @@ Make sure to add it in the format below:
 {What Was Updated}
 
 # ------------------------{Updates}------------------------
+# Aki
+Added a SECURITY file supposed to guide on what to do with vulnrabilities, althought may be better to incorperate it with the README or delete the SECURITY.md completly
 # Tori
 Added the Icon 1 as a transparent badge as well even though we may not use it
 # Aki
