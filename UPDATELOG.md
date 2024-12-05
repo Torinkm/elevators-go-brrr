@@ -15,6 +15,8 @@ Make sure to add it in the format below:
 
 # ------------------------{Updates}------------------------
 # Aki
+Updated 'SECURITY.md' to make sure it is accurate
+# Aki
 Backed Up 'main/Formal Files'
 # Tori
 Added the original Rational document as a word document in the original docs section in formal files
