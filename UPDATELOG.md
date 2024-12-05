@@ -15,6 +15,8 @@ Make sure to add it in the format below:
 
 # ------------------------{Updates}------------------------
 # Aki
+Updated 'main/README.md' to avoid confusion with files compared to plain text
+# Aki
 Updated 'SECURITY.md' to make sure it is accurate
 # Aki
 Backed Up 'main/Formal Files'
