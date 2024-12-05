@@ -78,11 +78,24 @@ The code will then loop all the way back to the user being asked for an option a
 
 # If Option 3 is chosen [Option == 3]
 
-[AKI FUCKIN ADD THIS!!!!!!]
+Option 3 deals with deleting data from the list if any data exists, this allows any products that may be out of stock
+or even no longer avaliable to hire due to maintinence, or lack of support.
+
+The program will first output "Please select Which data yu would like to remove"
+
+Then the program initializes a new variable called Option count, in which its value is assinged to the intager 0
+
+then a counter controlled loop is run, where the previously declared Index will now iterate between the values of 0 to 9whatever the value of MaxdIndex is. During this iteration, the program should check if the valueis a blank string [potentiallyu using a strip on the value. If the value is not blank, it will list is as an option with the indexd number as well as the data inside, and will increment Option count by 1, else nothing will happen.
+
+Once the counter controlled iteration finishes, it checks if the value of OptionCount is greater than 0, if it is 0, it will output that "No products were found" and return the user back to selecting an option, ese if it is greater than 0, it initializes an intager variable called SelectedNumber which will be assigned the integer value of -5.
+
+A condition controlled loop will then run, checking if the Selected Number is out of the range of 0 to the value of MaxIndex [9 in this example], t it is out of the range, it will ask the user to input what item they want to delete, and will ask for an integer input from the user. Once the Number is in the range, the number inputted is looked for in the array CurrentProducts and is replaced with a blank string value [""].
+
+And finallly, the user is taken back to the starting point where they get to select an option again.
 
 # If Option 4 is chosen [Option == 4]
 Nothing will run, however the requirement for the condition controlled loop for the Option not being for will no longer be met, causing the program to end
 
 # If an option is not chosen [Option != 4 / else]
-Nothing will run, and the User will be aske dagain for an Option, hopefully with an error message saying the option should be in range
+Nothing will run, and the User will be asked again for an option, hopefully with an error message saying the option should be in range of 1 to 4.
 
