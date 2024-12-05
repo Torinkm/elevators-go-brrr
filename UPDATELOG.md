@@ -15,9 +15,9 @@ Make sure to add it in the format below:
 
 # ------------------------{Updates}------------------------
 # Tori
-Added a newer one Logo second one Badge TRANSPARENT.png
+Added a newer logo 'Logo second one Badge TRANSPARENT.png'
 
-Deleted the Logo[TRANSPARENT].png file
+Deleted the 'Logo[TRANSPARENT].png' file
 # Aki
 Renamed 'Logo second one Badge BACKGORUND GONE.png' to 'Logo[TRANSPARENT].png'
 # Tori
