@@ -14,6 +14,8 @@ Make sure to add it in the format below:
 {What Was Updated}
 
 # ------------------------{Updates}------------------------
+# Aki
+Renamed Transparent Logo 2 to Logo[TRANSPARENT]
 # Tori
 Removed the background of the 2nd logo badge design & uploaded it
 # Aki
