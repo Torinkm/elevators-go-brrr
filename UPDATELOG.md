@@ -14,6 +14,8 @@ Make sure to add it in the format below:
 {What Was Updated}
 
 # ------------------------{Updates}------------------------
+# Tori
+Removed the background of the 2nd logo badge design & uploaded it
 # Aki
 Finished Explaiation for main/Source/Algorithm Concepts/AdminControl floworithms
 # Aki
