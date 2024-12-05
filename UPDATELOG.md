@@ -15,7 +15,7 @@ Make sure to add it in the format below:
 
 # ------------------------{Updates}------------------------
 # Tori
-Added the original Rational documewnt as a word document in the original files section in formal files
+Added the original Rational document as a word document in the original files section in formal files
 # Aki
 
 # Aki
