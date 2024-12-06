@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+<!-- <html> -->
+
+<head>
+    <!-- <h1>{{ title }}</h1> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="/static/basetemp.css" />
+    <style>
+    </style>
+</head>
+
+<body>
+<nav id = "nav-bar" class="navbar navbar-expand-sm bg-primary navbar-light">
+    <div class="container-fluid">
+        <!-- Links in the navbar -->
+        <ul class="navbar-nav">
+            <a class="navbar-brand" href="#">
+                <img src="/static/pictures/Logo.png" alt="logo" width="45" height="35">
+            </a>
+            <li class="nav-item">
+                <a class="nav-link" href="{{ url_for('home') }}" style="font-weight: bold; color: white;">Home Page</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{ url_for('hire') }}" style="font-weight: bold; color: white;">Hire Page</a>
+            <li class="nav-item">
+                <a class="nav-link" href="{{ url_for('adminRegister') }}" style="font-weight: bold; color: white;">Admin</a>
+            </li>
+        </ul>
+        <ul class="navbar-nav inline">
+        {% if current_user %}
+        <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('logout') }}" style="color: white;">LOG OUT</a>
+        </li>
+        <li class="nav-item nav-logged-in">
+            <a class="nav-link" href="{{ url_for('user') }}" style="color: white;">User Page</a>
+        </li>
+        {% else %}
+        <div class = "login" id = "log-in">
+            <li class="nav-item" style ="text-align: right;">
+                <a style="text-align: right; color: white;" class= "nav-link" href="{{ url_for('login') }}">LOG IN</a>
+            </li>
+        </div>
+        {% endif %}
+    </ul>
+</div>
+</nav>
+
+{% block content %}
+{% endblock %}
+</body>
+</html>
