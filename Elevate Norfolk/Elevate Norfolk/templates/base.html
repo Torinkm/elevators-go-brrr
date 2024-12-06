@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8"> 
+<!-- <html> --> 
+
+<head> 
+    <!-- <h1>{{ title }}</h1> --> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script> 
+    
+    <link rel="stylesheet" href="/static/basetemp.css" /> 
+    <style>
+        #about{
+            position: absolute;
+            top:10px;
+            left: 650px;
+            font-size: 35px;
+        }
+        #contact{
+            position: absolute;
+            top:10px;
+            left: 450px;
+            font-size: 35px;
+        }
+        #home{
+            position: absolute;
+            top:10px;
+            left: 150px;
+            font-size: 35px;
+        }
+        #hire{
+            position: absolute;
+            top:10px;
+            left: 300px;
+            font-size: 35px;
+        }
+        #login{
+            position: absolute;
+            top:10px;
+            font-size: 35px;
+            right: 10px
+        }
+        #logout{
+            position: absolute;
+            top: 5px;
+            font-size: 35px;
+            right: 15px;
+        }
+        #user{
+            position: absolute;
+            top: 5px;
+            font-size: 35px;
+            right: 200px;
+        }
+        #YourCanvas{
+                position: absolute;
+                top: 1000px;
+                left: -100px;
+        }
+
+        #TC{
+            position: absolute;
+            top: 1010px;
+            left: 500px;
+        }
+        #TCimg{
+            position: absolute;
+            top: 1013px;
+            left: 475px;
+        }
+
+        #Acc{
+            position: absolute;
+            top: 1040px;
+            left: 500px;
+        }
+        #Accimg{
+            position: absolute;
+            top: 1042px;
+            left: 475px;
+        }
+
+        #loc{
+            position: absolute;
+            top: 1005px;
+            left: 1000px;
+        }
+        #locimg{
+            position: absolute;
+            top: 1010px;
+            left: 975px;
+        }
+
+        #contactinfo{
+            position: absolute;
+            top: 1015px;
+            left: 1300px;
+        }
+        #phoneimg{
+            position: absolute;
+            top: 1020px;
+            left: 1280px;
+        }
+        #emailimg{
+            position: absolute;
+            top: 1043px;
+            left: 1275px;
+        }
+
+    </style> 
+</head>
+
+<body>
+<nav id = "nav-bar" class="navbar navbar-expand-sm bg-primary navbar-light"> 
+    <div class="container-fluid">
+        <!-- Links in the navbar --> 
+        <ul class="navbar-nav">
+            <a class="navbar-brand" href="/">
+                <img id="logo" src="/static/transparentOutline.png" alt="logo" width="55" height="60">
+            </a> 
+            <li class="nav-item"> 
+                <a class="nav-link" href="{{ url_for('home') }}" style="font-weight: bold; color: white;" id="home">Home</a> 
+            </li> 
+            <li class="nav-item"> 
+                <a class="nav-link" href="{{ url_for('hire') }}" style="font-weight: bold; color: white;" id="hire"h>Hire</a> 
+            </li> 
+            <li class="nav-item"> 
+                <a class="nav-link" href="{{ url_for('contact') }}" style="font-weight: bold; color: white;" id="contact">Contact</a> 
+            </li> 
+            <li class="nav-item"> 
+                <a class="nav-link" href="{{ url_for('about') }}" style="font-weight: bold; color: white;" id="about">About</a> 
+            </li> 
+        </ul> 
+        <ul class="navbar-nav inline"> 
+        {% if current_user %} 
+        <li class="nav-item nav-logged-in"> 
+            <a class="nav-link" href="{{ url_for('users') }}" style="color: white; font-weight: bold;" id="user">User</a> 
+        </li> 
+        <li class="nav-item"> 
+            <a class="nav-link" href="{{ url_for('logout') }}" style="color: white; font-weight: bold;" id="logout">Log Out</a> 
+        </li> 
+ 
+        {% else %} 
+        <div class = "login" id = "log-in"> 
+            <li class="nav-item" style ="text-align: right;"> 
+                <a style="text-align: right; color: white; font-weight: bold;" class= "nav-link" href="{{ url_for('login') }}" id="login">Login</a> 
+            </li>
+        </div> 
+        {% endif %}
+     
+</div>
+</nav>
+
+<canvas id="YourCanvas" width="2000" height="80"></canvas> 
+<script>
+    const c = document.getElementById("YourCanvas");
+    const ctx = c.getContext("2d");
+
+    ctx.rect(20,0,3000,1000);
+    ctx.fillStyle = "darkgrey";
+    ctx.fill();
+</script>
+
+<img id="TCimg" src="/static/Book.png" style="height:20px;">
+<a id="TC" class="nav-link" style="color: black; font-weight: bold" href="">Terms & Conditions</a>
+<img id="Accimg" src="/static/Accessibility.png" style="height:20px;">
+<a id="Acc" class="nav-link" style="color: black; font-weight: bold" href="{{ url_for('accessibility') }}">Accessibility</a>
+
+<img id="locimg" src="/static/Location.png" style="height:20px">
+<a id="loc" style="color: black; font-weight: bold">
+Location <br>
+Norfolk <br>
+Post Code</a>
+
+<img id="phoneimg" src="/static/Phone.png" style="height:20px;">
+<img id="emailimg" src="/static/Email.png" style="height:20px;">
+<a id="contactinfo" style="color: black; font-weight: bold">
+    Phone: 07470128385 <br>
+    Email: sales@elevatenorfolk.co.uk
+</a>
+
+{% block content %}
+{% endblock %}
+</body> 
+</html> 
