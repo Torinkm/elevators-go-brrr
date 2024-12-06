@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block title %}Login in to our our buetifule bedsite{% endblock %}
+
+{% block content %}
+
+<div class = 'container' style="padding-top: 16rem;">
+    <form action = '/login' method = 'POST'>
+        
+        <h2>Log-in</h2>
+
+        <!-- Username Input -->
+        <div class="mb-3">
+            <label for="Username" class="form-label">Username</label>
+            <p><input type = "text" id = "Username" name = "Username" class="form-control" required="true"></p>
+        </div>
+
+        <!-- Password Input -->
+        <div class="mb-3">
+            <label for="Password" class="form-label">Password</label>
+            <p><input type = "password" id = "Password" name = "Password" class="form-control" required="true"></p>
+        </div>
+
+        <!-- Submit Button -->
+        <p><input type = "submit" id = "Submit" name = "Submit" class="btn btn-primary"></p>
+
+        <!-- Link to Register page -->
+        <p>Dont have an account? <a href="/register">Click Here</a> to create one!</p>
+
+        <!-- Link to Admin Register page -->
+        <br><br><p>Want to be Admin? <a href="/adminregister">Click Here</a> to create one!</p>
+
+    </form>
+</div>
+
+{% endblock %}
