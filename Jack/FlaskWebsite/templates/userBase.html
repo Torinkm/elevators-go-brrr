@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block title %}{{ current_user }}{% endblock %}
+
+{% block content %}
+
+<style>
+    .navbarLink {
+        width: 100%; 
+        height: 5.5rem; 
+        border: 2px solid gray;
+        border-right: 0px solid;
+        display: grid;
+        place-content: center;
+    }
+    #ProgressCircle {
+        border:#1AAE73 25px solid; 
+        border-radius:200px; 
+
+        height: 200px; 
+        width:200px; 
+
+        display: grid; 
+        place-content:center; 
+        font-size: 55px;
+    }
+</style>
+
+<!-- Navbar on left of page -->
+<div style="position: relative; left: 0; top: -20px; height:100vh; width: 13rem; border-right: 2px solid gray;">
+
+    <a href="/user/progress"><div class="navbarLink" style="border-bottom: 1px solid gray;">Progress Tracker</div></a>
+    <a href="/user/details"><div class="navbarLink" style="border-top: 1px solid gray;">Account Details</div></a>
+    <a href="/logout"><div class="navbarLink" style="position:absolute; bottom: 71px;">Log out</div></a>
+</div>
+
+<div style="position: absolute; left: 14rem; top: 1rem;">
+    <div style="height: 71px;"></div>
+
+    {% block userContent %}{% endblock %}
+</div>
+
+{% endblock %}
