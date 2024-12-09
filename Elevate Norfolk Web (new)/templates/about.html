@@ -1,0 +1,52 @@
+{% extends "base.html"%}
+
+{%  block content %}
+<!-- about.html -->
+<html>
+    <style>
+        #story{
+            position: absolute;
+            top: 200px;
+            left: 350px;
+            font-size: 22px;
+        }
+        #goal{
+            position: absolute;
+            top: 700px;
+            right: 150px;
+            font-size: 22px;
+        }
+        #lift{
+            position: absolute;
+            right: 325px;
+            top: 200px;
+        }
+        #lift2{
+            position: absolute;
+            left: 400px;
+            top: 400px;
+        }
+        #about_us{
+                text-align: center;
+                padding: 3px;
+                background-color: darkgrey;
+                color: black;
+            }
+    </style>
+    
+    <body>
+        <footer id="about_us"><h1>About Us!</h1></footer>
+        <div id="story">
+            <p><h1>Our Story</h1>
+            Elevate Norfolk started when I first started our sister company <br> Norfolk Doors on April 14th 2021... </p>
+        </div>
+        <div id="goal">
+            <p><h1 id="goaltext">Our Goals</h1>
+            Our goals with Elevate Norfolk is to reduce reliance on external suppliers and provide a <br> direct service to businesses and individuals in need of platform rental</p>
+        </div>
+        <img id="lift" src="/static/lift.avif" width="500px;">
+        <img id="lift2" src="/static/lift2.webp" style="height:500px;">
+    </body>
+</html>
+
+{%  endblock content %}

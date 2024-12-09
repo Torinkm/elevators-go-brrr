@@ -1,0 +1,114 @@
+{% extends "base.html"%}
+
+{%  block content %}
+<!-- home.html -->
+<html>
+    <style>
+            #Contact{
+                text-align: center;
+                padding: 3px;
+                background-color: darkgrey;
+                color: black;
+            }
+            #text{
+                position: absolute;
+                top: 400px;
+                left: 100px
+            }
+            #myCanvas{
+                position: absolute;
+                left: 1100px;
+                top: 200px;
+            }
+            #Footer{
+                text-align: center;
+                padding: 3px;
+                background-color: darkgrey;
+                color: black;
+            }
+            #phone{
+                position: absolute;
+                left: 1125px;
+                top: 500px;
+            }
+            #message{
+                position: absolute;
+                left: 1125px;
+                top: 600px;
+            }
+            #email{
+                position: absolute;
+                left: 1125px;
+                top: 400px;
+            }
+            #usern{
+                position: absolute;
+                left: 1325px;
+                top: 250px;
+            }
+            #username{
+                position: absolute;
+                left: 1130px;
+                top: 300px;
+            }
+            #UsernameBox{
+                position: absolute;
+                left: 1125px;
+                top: 300px;
+            }
+            #loginn{
+                position: absolute;
+                left: 1125px;
+                top: 300px;
+            }
+            #button{
+                position: absolute;
+                left: 1285px;
+                top: 720px;
+            }
+            #YourCanvas{
+                position: absolute;
+                top: 1000px;
+                left: -100px;
+            }
+    </style>
+    <body>
+        <footer id="Contact"><h1>Contact Us!</h1></footer>
+        <canvas id="myCanvas" width="500" height="600" style="border:1px solid #000000;"></canvas>
+    <div id="text">
+        <p> <h1>Contact Us!</h1> <br>
+            Here at Elevate Norfolk we offer any support to our customers. <br> Elevate Norfolk supplys both mobile lifts and the transportation of these all across Norfolk and surrounding areas. <br>
+            You can chat to our sales team for any inqueries that you may have.
+        </p>
+    </div>
+
+        {% if current_user %} 
+        <form action="" method="POST" style="text-align: center;">
+            <div id="email">
+                <label for="type" style="font-size: 32px;">Email</label><br>
+                <input type="string" id="Email" required size="50">
+            </div>
+            <div id="phone">
+                <label for="type" style="font-size: 32px;">Phone Number</label><br>
+                <input type="integer" id="Phone" required size="50" >
+            </div>
+            <br>
+            <div id="message">
+                <label for="type" style="font-size: 32px;">Your Message</label><br>
+                <input type="string" id="Message" required size="50">
+            </div>
+
+        <div >
+        <h3 id="usern">User<br> 
+            <h3 id="username">{{session['user']}}</h3>
+        </h3>
+        <canvas id="UsernameBox" width="450" height="30" style="border:1px solid #000000;"></canvas>
+        <input id="button" type="submit">
+    </div>
+        {% else %} 
+        <h2 id="loginn">Please login to an account so we <br> can  gather your details</h2>
+        {% endif %}
+
+    </body>
+</html>
+{%  endblock content %}
