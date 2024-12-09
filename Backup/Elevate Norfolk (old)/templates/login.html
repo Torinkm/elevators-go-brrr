@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+
+{% block content %}
+<html>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sematics-ui@2.4.2/dist/sematic.min.css"></link>
+<script scr="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script scr="/static/alert.js"></script>
+    <div class = "messages" style="height: 20px;">
+    {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            {% for category, msg in messages %}
+            <div id="alert" class="alert alter-dissmissable fade show {% if category == 'danger' %} alert-danger{% elif category == 'success' %} alert-success {% else %} alert-info {% endif %}">
+                {{ msg }}
+                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+            </div>
+            {% endfor %}
+        {% endif %}
+    {% endwith %}
+    </div>
+    <div class="container" style = "width: 300px;">
+        <form action="/login" method="POST">
+            <h3 style="text-align:center;">This is the Login Page</h3>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">User Name</label>
+                <input type="login" class="form-control" id="email" name = "email" aria-describedby="emailHelp">
+            </div> 
+            <div class = "mb-3">
+                <label for = "exampleInputEmail1" class ="form-label">Password</label>
+                <input type = "password" class = "form-control" id = "password" name="password" aria-describedby="emailHelp">
+                <button type = "button" class = "btn btn.primary" onclick="togglepassword()">Show</button>
+                <div id="emailHelp" class="form-text">Never share your password with anyone else.</div>  
+            </div>
+            <div style ="text-align:center;">
+                <p><input class="btn btn-primary" style="justify-content: center;" type ="submit" name="submit" /></p>
+            </div> 
+            <a class = 'nav-link' href="/register" style = "text-align: center;"> Need To Register?</a>
+
+        </form>
+    </div>
+</html>
+<script>
+function togglepassword(){
+    var passwordInput = document.getElementById("password")
+    if (passwordInput.type === "password"){
+        passwordInput.type = "text"
+        event.target.textContent = "Hide"
+    } else {
+        passwordInput.type = "password"
+        event.target.textContent = "Show"
+    }
+}
+
+</script>
+
+
+
+{%  endblock content %}
