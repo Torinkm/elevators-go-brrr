@@ -15,6 +15,11 @@ Make sure to add it in the format below:
 
 # ------------------------{Updates}------------------------
 # Aki
+Announcement created in 'main/README.md'
+
+Created 'main/Explaination.md' to record optinions
+
+# Aki
 Uploaded a PDF of the Gantt Chart
 # Aki
 Updated 'main/README.md' to avoid confusion with files compared to plain text
