@@ -1,3 +1,9 @@
+# IMPORTANT
+
+Please fill in 'main/Evaluation.md' with the requested info [What went well, what may have been difficult, changes if we had more time, and any improvements if yu were to do it next time and place a few opinions about the project!
+
+This MUST be completed before we hand this in on Tuesday!
+
 # Before you upload!
 Make sure to add files to the respective folder in the repository to a point that it makes sense, like the gantt chart would go into 'main/Formal Files/Gantt'
 
