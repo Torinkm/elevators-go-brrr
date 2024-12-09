@@ -17,7 +17,7 @@ Make sure to add it in the format below:
 # Aki
 Announcement created in 'main/README.md'
 
-Created 'main/Explaination.md' to record optinions
+Created 'main/Explaination.md' to record opinions
 
 # Aki
 Uploaded a PDF of the Gantt Chart
