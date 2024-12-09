@@ -15,6 +15,14 @@ Make sure to add it in the format below:
 
 # ------------------------{Updates}------------------------
 # Aki
+Backed up all files
+
+Added a secret 😉
+
+Cleaned up repository 'main/' 
+# Jack
+Uploaded new version of Code
+# Aki
 Announcement created in 'main/README.md'
 
 Created 'main/Explaination.md' to record opinions
