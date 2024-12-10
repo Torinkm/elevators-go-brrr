@@ -1,0 +1,39 @@
+{% extends "base.html"%}
+
+{%  block content %}
+<!-- accessibility.html -->
+<html>
+    <style>
+    #access{
+        text-align: center;
+        padding: 3px;
+        background-color: darkgrey;
+        color: black;
+    }
+    #access_p1{
+        text-align: center;
+    }
+    #google_translate_element{
+        position: absolute;
+        left: 850px;
+    }
+</style>
+<body>
+    <footer id="access"><h1>Accessibility Page</h1></footer>
+<br><br>
+<h1 id="access_p1">Use me to translate</h1>
+<br><br>
+<div id="google_translate_element"></div>
+
+<div id="translate">
+<script type="text/javascript">
+function googleTranslateElementInit() {
+    new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+}
+</script>
+            
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>      
+</div>
+</body>
+</html>
+{%  endblock content %}

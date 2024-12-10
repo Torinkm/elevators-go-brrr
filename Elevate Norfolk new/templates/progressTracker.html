@@ -1,0 +1,15 @@
+{% extends "userBase.html" %}
+
+{% block userContent %}
+
+    <h1>Hello, {{ current_user }}</h1>
+    <div class="card" style="width: fit-content; padding-right: 2vw; padding-left: 2vw; margin:.5vw; text-align: center;">
+        <div class="card-body">
+            <h5 class="card-title">Progress</h5>
+            <div id="ProgressCircle">100%</div>
+            <p class="card-text">You've met your target!</p>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
