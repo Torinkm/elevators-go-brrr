@@ -1,0 +1,146 @@
+{% extends "base.html" %}
+
+{% block title %}Sessions{% endblock %}
+
+{% block content %}
+
+<html>
+    <style>
+        #hire1{
+            text-align: center;
+            padding: 3px;
+            background-color: darkgrey;
+            color: black;
+        }
+    </style>
+    <footer id="hire1"><h1>Hire Here!</h1></footer>
+</html>
+
+<div style="padding: 5rem 10rem 0rem 10rem;">
+    <h1>Hire</h1>
+    {% if not current_user %}
+    <p>You need to be signed in to hire equipment.</p>
+    {% endif %}
+    <div style="display: flex; flex-direction:row; justify-content: space-between;">
+        <form action = '/hire' method = 'POST' >
+            
+            {% if search != False %}
+                <input type="search" id="Search" name="Search" placeholder="Search" value="{{search}}">
+            {% else %}
+                <input type="search" id="Search" name="Search" placeholder="Search">
+            {% endif %}
+
+            <button type = "search" id = "Submit" name = "Submit" class="btn" 
+            style="background-color: #1AAE73; color: white;">Search</button>
+
+            {% if search %}
+                <a href = '/hire' class="btn btn-secondary" style="margin-left: .4rem;">
+                    Clear Search</a>
+            {% endif %}
+        </form>
+
+        <!-- Create Session Button -->
+        {% if admin %}
+            <button class = "btn" style = "background-color: #1AAE73; color: white; float: right;"
+            data-bs-toggle="modal" data-bs-target="#exampleModal">Add Equipment</button>
+        
+
+        <!-- Modal for the session creation -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <form class="modal-content" action="/create_hire" method="POST">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Add Equipment</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div style="display: flex; flex-direction: row;">
+                                <div style="padding: .5rem;">
+                                    Equipment Name <br>
+                                    <input type="text" id="equipmentName" name="equipmentName" placeholder="Name">
+                                </div>
+                            <div style="padding: .5rem;">
+                                Short Description <br>
+                                <input type="text" id="equipmentShortDescription" name="equipmentShortDescription" placeholder="Short description for the session" style="width: 100%;">
+                            </div>
+                            <div style="padding: .5rem;">
+                                Long Description <br>
+                                <input type="text" id="equipmentLongDescription" name="equipmentLongDescription" placeholder="Long description for the session" style="width: 100%;">
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                            <button type="submit" class="btn" style="background-color: #1AAE73; color: white; float: right;">Add Equipment</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        {% endif %}
+    </div>
+    <hr style="border-top: 8px solid #bbb; border-radius:5px">
+</div>
+
+<div class="container text-center" style="display:flex;">
+    <div class="row" style="float:center; width: 80vw">
+        {% for row in data -%}  
+            <div class="card" style="width: 18rem; margin:.5vw;">
+                <!-- <img src="/static/aftonPictures/{{ row[0] }}.png" class="card-img-top" alt="afton" style="margin-top: 10px;"> -->
+                <div class="card-body">
+                    <h5 class="card-title">{{ row[1] }}</h5>
+                    <p class="card-text">{{ row[2] }}</p>
+                    <div style="display: flex; justify-content:center;">
+                        <button class = "btn" style = "background-color: #1AAE73; color: white; float: right;"
+                        data-bs-toggle="modal" data-bs-target="#SessionModal{{ row[0]}}">View Equipment details</button>
+                    </div>
+                    {% if current_user %}
+                        {% if row[4] %}
+                            {% if row[4] == userID %}
+                                <a class="btn btn-secondary" style="margin-top: 1rem;"
+                                href="{{ url_for('hire_equipment', hireID = row[0])}}">You've hiring this</a>
+                            {% else %}
+                                <a class="btn btn-danger" style="margin-top: 1rem;" 
+                                href="{{ url_for('hire_equipment', hireID = row[0])}}">Already Hiring</a>
+                            {% endif %}
+                        {% else %}
+                            <a class="btn" style="background-color: #1AAE73; color: white; margin-top: 1rem;" 
+                            href="{{ url_for('hire_equipment', hireID = row[0])}}">Hire Equipment</a>
+                        {% endif %}
+                    {% else %}
+                        {% if row[4] %}
+                            <a class="btn btn-secondary" style="margin-top: 1rem;">Already Hiring</a>
+                        {% else %}
+                            <a class="btn btn-secondary" style="margin-top: 1rem;">Hire Equipment</a>
+                        {% endif %}
+                    {% endif %}
+                    {% if admin %}
+                        <a href="/delete_equipment/{{row[0]}}" class="btn btn-danger" style="margin-top: 1rem;">Delete Equipment</a>
+                    {% endif %}
+                </div>
+            </div>
+
+            <!-- Modal for session -->
+            <div class="modal fade" id="SessionModal{{ row[0]}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">{{ row[1] }}</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <h5 class="card-title">{{ row[1] }}</h5>
+                            {{ row[3] }}
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            {% if current_user %}
+                                <a class="btn btn-secondary">Hire Equipment</a>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+
+{% endblock %}
